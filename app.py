@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
@@ -56,4 +56,4 @@ def delete(sno):
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run()
